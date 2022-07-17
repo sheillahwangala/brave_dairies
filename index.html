@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="menuitem">
-                        <a id="reports" href="###">Reports</a>
+                        <a id="reports" href="#results">Reports</a>
                     </li>
                 </ul>
 
@@ -115,7 +115,7 @@
                 section by inputing the values in the below input sections.</p>
         </div>
 
-        <div class="prod-reports">
+        <div class="prod-reports" id="reports">
 
             <div class="item-container1">
                 <label for="sheds">Choose Shed:</label>
@@ -139,46 +139,45 @@
                 <button id="compute" onclick="totalProduction()">Add Production</button>
             </div>
 
-            <div class="totals">
-
-            </div>
-
         </div><br>
+
+        <div id="totals" style="padding-left: 20px;">
+
+        </div>
 
         <hr>
 
         <div class="incomeReports">
 
-            //Heading for income reports
-
+           <h2 style="padding-left: 20px;">Generate Price vs Time Report</h2>
 
             <div class="item-container1">
                 
-                    <input type="numbers"id="txtDailyProd" placeholder="Enter Amount per Litre" id="txtPrice">
+                    <input type="numbers" placeholder="Enter Amount per Litre" id="txtPrice">
 
-            </div>
-
-            <div class="item-container1">
-                <label for="sheds">Select Period:</label>
+                    <label for="sheds">Select Period:</label>
 
                 <select name="periods" id="periods">
                     <option value="">-Select-</option>
                     <option value="weekly">Weekly</option>
                     <option value="yearly">Yearly</option>
                 </select>
+
+                <button id="income" onclick="incomeOverTime(document.getElementById('txtPrice').value,document.getElementById('periods').options[document.getElementById('periods').selectedIndex].value)">Genarate Report</button>
+
+                <button id="income" onclick="wholeYearReport()" style="float: right; background-color:orange;border-color:orange;">Annual Breakdown Report</button>
+
             </div>
 
-            <div class="item-container1">
-                <button id="income" onclick="incomeOverTime(document.getElementById('txtPrice'),'weekly')">Genarate Report</button>
-            </div>
 
         </div>
 
-        <div id="results">
+        <div id="results" style="padding-left: 20px;">
 
         </div>
 
         <br>
+
 
         <footer>
 
