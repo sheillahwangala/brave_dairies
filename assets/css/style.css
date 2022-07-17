@@ -171,6 +171,8 @@
 #sheds{
     color: green;
     font-weight: bolder;
+   border-color: orange;
+   border-style: solid;
 }
 .shed-production{
     display: flex;
@@ -184,12 +186,18 @@
 .quantity{
    border-style: solid;
    width: 200px;
+   border-color: orange;
 }
 #compute{
    background-color: orange;
    font-weight: bolder;
    font-size: larger;
    border-radius: 2px;
+   border-color: orange;
+}
+#income{
+    background-color: orange;
+    padding-left: 10px;
 }
 footer{
     text-align: center;
