@@ -173,9 +173,10 @@
    border-style: solid;
    width: 100px;
 }
-.compute{
-    border-style: solid;
-    width: 100px;
+#compute{
+    background-color: orange;
+   font-weight: bold;
+   
 }
 .production{
     font-size: 12px;
