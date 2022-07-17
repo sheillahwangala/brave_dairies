@@ -1,14 +1,16 @@
-/* *{
-    display: flex;
-    width: 100%;
-} */
+*{
+    padding-right: 20px;
+    margin: 0px;
+}
 .header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     color: white;
-    background-color: rgb(31, 188, 31);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: rgb(79, 188, 79);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
 }
 .brave{
     float: left;
@@ -20,7 +22,18 @@
 .menu{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: fit-content;
+    padding-top: 20px;
+}
+.menuitem{
+    display: block;
+    float: left;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 .menuitem a{
     text-decoration: none;
@@ -30,4 +43,33 @@
 .menuitem a:hover{
     text-decoration: underline;
     text-decoration-color: orangered;
+}
+.btn-get button {
+    writing-mode: horizontal-tb;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: orange;
+    color: white;
+}
+.last {
+    float: right;
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+.partone{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    min-height: 500px;
+    clear: unset;
+    width: fit-content;
+}
+.img-one{
+    width: 600px;
 }
