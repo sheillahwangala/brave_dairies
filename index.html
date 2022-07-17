@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../brave_dairies/assets/css/style.css">
+
     <title>Brave Dairies</title>
 </head>
+
 <body>
     <section>
+
 
         <div class="header">
 
@@ -40,7 +44,7 @@
                     </li>
                 </ul>
 
-            </div>      
+            </div>
 
             <div class="last">
                 <div class="btn-get">
@@ -54,7 +58,9 @@
         <div class="partone">
             <div class="title">
                 <h1>Who we are</h1><br>
-                <p>Brave Dairies is a dairy farm who are committed to caring for their cattle and land in the best way there is. They are dedicated to ensuring that there is sufficient production of fresh, great-tasting and nutritios milk all year round.</p><br><br><br>
+                <p>Brave Dairies is a dairy farm who are committed to caring for their cattle and land in the best way
+                    there is. They are dedicated to ensuring that there is sufficient production of fresh, great-tasting
+                    and nutritios milk all year round.</p><br><br><br>
                 <button id="btn-explore">Explore More</button>
             </div>
             <div>
@@ -79,7 +85,8 @@
 
         <div class="subtitle">
             <h1>Our dairy farm</h1>
-            <p>We are dedicated in caring for our large herds of cattle to ensure that they are always healthy and strong to ensure sufficient production of quality and nutritious milk for supply.</p>
+            <p>We are dedicated in caring for our large herds of cattle to ensure that they are always healthy and
+                strong to ensure sufficient production of quality and nutritious milk for supply.</p>
         </div>
 
         <div class="items">
@@ -96,52 +103,82 @@
 
             <div class="item-container">
                 <img class="images1" src="../brave_dairies/assets/images/milk truck.jpg"><br><br>
-                <p>Our modern storage and transport facility ensures our milk gets to our customer its its original and best state.</p>
+                <p>Our modern storage and transport facility ensures our milk gets to our customer its its original and
+                    best state.</p>
             </div>
 
         </div><br>
 
         <div class="subtitle">
             <h1>Dairy Production Reports</h1>
-            <p>The production of milk per shed and sales of milk to Brookside per litre is recorded and computed in this section by inputing the values in the below input sections.</p>
+            <p>The production of milk per shed and sales of milk to Brookside per litre is recorded and computed in this
+                section by inputing the values in the below input sections.</p>
         </div>
 
         <div class="prod-reports">
 
             <div class="item-container1">
-                <label for="sheds">Choose period:</label>
+                <label for="sheds">Choose Shed:</label>
 
-               <select name="Sheds" id="sheds">
+                <select name="Sheds" id="sheds">
+                    <option value="">-Select-</option>
                     <option value="Shed-a">Shed A</option>
                     <option value="Shed-b">Shed B</option>
                     <option value="Shed-c">Shed C</option>
                     <option value="Shed-d">Shed D</option>
-               </select>
-            </div>  
+                </select>
+            </div>
 
             <div class="item-container1">
                 <form class="shed-production">
-                <input type="numbers" placeholder="Litres per shed" class="quantity">
-            </form>
+                    <input type="numbers"id="txtDailyProd" placeholder="Litres per shed" class="quantity">
+                </form>
             </div>
-                
-            <div class="item-container1">
-                <label for="sheds">Choose a shed:</label>
 
-               <select name="periods" id="periods">
-                    <option value="daily">Daily</option>
-                    <option value="weekly">Weekly</option>
-                    <option value="monthly">Monthly</option>
-                    <option value="yearly">Yearly</option>
-               </select>                
-            </div>
             <div class="item-container1">
-                <button id="compute">Compute</button>
+                <button id="compute" onclick="totalProduction()">Add Production</button>
+            </div>
+
+            <div class="totals">
+
             </div>
 
         </div><br>
 
-        <hr><br>
+        <hr>
+
+        <div class="incomeReports">
+
+            //Heading for income reports
+
+
+            <div class="item-container1">
+                
+                    <input type="numbers"id="txtDailyProd" placeholder="Enter Amount per Litre" id="txtPrice">
+
+            </div>
+
+            <div class="item-container1">
+                <label for="sheds">Select Period:</label>
+
+                <select name="periods" id="periods">
+                    <option value="">-Select-</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+
+            <div class="item-container1">
+                <button id="income" onclick="incomeOverTime(document.getElementById('txtPrice'),'weekly')">Genarate Report</button>
+            </div>
+
+        </div>
+
+        <div id="results">
+
+        </div>
+
+        <br>
 
         <footer>
 
@@ -230,17 +267,20 @@
                 </div>
 
             </div>
-          
+
             </div>
 
             <div class="rights">
-                <h5>All rights reserved, terms and condition applied.</h5>    
+                <h5>All rights reserved, terms and condition applied.</h5>
             </div>
 
         </footer>
 
 
     </section>
-    
+
+    <script src="../brave_dairies/assets/js/main.js"></script>
+
 </body>
+
 </html>
