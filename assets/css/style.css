@@ -82,7 +82,7 @@
 }
 .title h1 {
     font-size: 40px;
-    color: rgb(79, 188, 79);
+    color: rgb(30, 121, 30);
 }
 #btn-explore {
     writing-mode: horizontal-tb;
@@ -132,6 +132,19 @@
 }
 .subtitle h1{
     font-size: 40px;
-    color: rgb(79, 188, 79);
+    color: rgb(30, 121, 30);
 
+}
+.images1{
+    width: 180px;
+    border-radius: 0%;
+    border-style: inset;
+}
+.item .item-container{
+    width: 20%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2); 
+    min-height: 240px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-right: 30px;
 }
