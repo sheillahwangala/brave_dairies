@@ -1,4 +1,33 @@
-*{
+/* *{
     display: flex;
     width: 100%;
+} */
+.header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(31, 188, 31);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.brave{
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.menuitem a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+.menuitem a:hover{
+    text-decoration: underline;
+    text-decoration-color: orangered;
 }
