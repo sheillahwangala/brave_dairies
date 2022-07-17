@@ -187,7 +187,7 @@
 .quantity{
    border-style: solid;
    width: 200px;
-   border-color: orange;
+   border-color: rgb(58, 228, 58);
 }
 #compute{
    background-color: orange;
@@ -198,7 +198,7 @@
 }
 #txtPrice{
     border-style: solid;
-    border-color: orange;
+    border-color: rgb(58, 228, 58);
 }
 #income{
     background-color: rgb(58, 228, 58);
@@ -211,6 +211,7 @@
 }
 footer{
     text-align: center;
+    line-height: 40px;
 }
 .quick-links{
     display: flex;
