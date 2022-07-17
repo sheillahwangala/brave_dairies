@@ -195,6 +195,10 @@
    border-radius: 2px;
    border-color: orange;
 }
+#txtPrice{
+    border-style: solid;
+    border-color: orange;
+}
 #income{
     background-color: orange;
     padding-left: 10px;
